@@ -23,6 +23,11 @@ matrix:
   allow_failures:
     - rvm: jruby-19mode
     - rvm: rbx-2
+  exclude:
+    - gemfile: master.awsv1.gemfile
+      rvm: 2.0
+    - gemfile: master.awsv2.gemfile
+      rvm: 2.0
 
 sudo: false
 cache: bundler
